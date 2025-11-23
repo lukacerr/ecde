@@ -35,6 +35,13 @@ h1, h2, h3, h4, h5, h6 {
 	color: #d40b0c !important;
 }
 
+.zoom-hover {
+  transition: transform 0.3s ease;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.1);
+}
 
 /* Carousel fixes */
 
@@ -58,14 +65,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Interactivity fixes */
-
-.navbar-brand img {
-  transition: transform 0.3s ease;
-}
-
-.navbar-brand:hover img {
-  transform: scale(1.1);
-}
 
 .toast-success {
   background-color: #1355a5;
