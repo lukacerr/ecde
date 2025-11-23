@@ -1,20 +1,9 @@
-$(document).ready(function(){
+$(() => {
+  AOS.init();
+  $(window).on('load', () => AOS.refresh());
+  $('.carousel-promos').slick({ dots: true });
 
-    // Inicializar AOS (Animaciones al scrollear)
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-
-    // Inicializar Carousel de Promociones
-    $('.promos-carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true
-    });
-
+  toastr.options.closeButton = true;
+	toastr.options.positionClass = 'toast-bottom-right';
+  $(document).on('click', '.btn-add', () => toastr.success('¡Agregado al carrito!'));
 });
