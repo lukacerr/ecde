@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alfajores Capitán del Espacio</title>
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Bootstrap 5 & Icons -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+		/>
+
+		<!-- AOS Animation -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		<!-- Slick Carousel -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="assets/styles.css" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-brand-blue sticky-top">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="index.html">
+					<img
+						src="assets/img/logo_placeholder.png"
+						alt="Logo"
+						height="40"
+						class="d-inline-block align-text-top me-2"
+					/>
+					Capitán del Espacio
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav align-items-center gap-3">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="secciones/products.html">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#promos">Promociones</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#historia">Nuestra Historia</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="btn btn-brand-red text-white rounded-pill px-3"
+								href="secciones/cart.html"
+							>
+								<i class="bi bi-cart-fill"></i> Carrito
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Header Carousel Promos -->
+		<header id="promos" class="bg-light py-5 overflow-hidden">
+			<div class="container">
+				<div class="promos-carousel text-center">
+					<!-- Slide 1 -->
+					<div class="px-3">
+						<img
+							src="https://placehold.co/800x300/1355a5/FFFFFF?text=Promo+Triple"
+							class="img-fluid rounded shadow mx-auto"
+							alt="Promo 1"
+						/>
+						<h3 class="mt-3 text-brand-blue">¡Triple Sabor!</h3>
+						<p class="lead">
+							Conseguí la caja de triples a un precio espacial.
+						</p>
+					</div>
+					<!-- Slide 2 -->
+					<div class="px-3">
+						<img
+							src="https://placehold.co/800x300/d40b0c/FFFFFF?text=Envios+Gratis"
+							class="img-fluid rounded shadow mx-auto"
+							alt="Promo 2"
+						/>
+						<h3 class="mt-3 text-brand-red">Envíos a todo el país</h3>
+						<p class="lead">Llevamos el sabor de Quilmes a tu casa.</p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Historia Section -->
+		<section id="historia" class="py-5">
+			<div class="container">
+				<div class="text-center mb-5" data-aos="fade-up">
+					<h2 class="display-5 text-brand-blue fw-bold">Nuestra Historia</h2>
+					<p class="text-muted">Primeros en la conquista del buen gusto</p>
+				</div>
+
+				<!-- Parte 1: Texto Izquierda, Foto Derecha -->
+				<div class="row align-items-center mb-5">
+					<div class="col-lg-9" data-aos="fade-right">
+						<h3 class="text-brand-red mb-3">Los Inicios</h3>
+						<p>
+							Un 2 de febrero del año 1962, comienza la historia del Capitán del
+							Espacio, una pequeña empresa de alfajores por los amigos Arturo y
+							Ángel. El comienzo fue en la localidad de Ezpeleta donde la
+							fábrica estuvo instalada por un tiempo. Posteriormente se instaló
+							en un lugar con más espacio en la calle Luis María Campos en
+							Bernal Oeste.
+						</p>
+					</div>
+					<div class="col-lg-3 text-center" data-aos="fade-left">
+						<img
+							src="https://placehold.co/300x300?text=Angel"
+							class="img-fluid rounded shadow border-brand-blue"
+							alt="Fundador"
+						/>
+					</div>
+				</div>
+
+				<!-- Parte 2: Foto Izquierda, Texto Derecha -->
+				<div class="row align-items-center flex-column-reverse flex-lg-row">
+					<div class="col-lg-3 text-center mb-3 mb-lg-0" data-aos="fade-right">
+						<img
+							src="https://placehold.co/300x300?text=Fabrica"
+							class="img-fluid rounded shadow border-brand-blue"
+							alt="Fabrica antigua"
+						/>
+					</div>
+					<div class="col-lg-9" data-aos="fade-left">
+						<h3 class="text-brand-red mb-3">Elaboración Artesanal</h3>
+						<p>
+							En esta época, el trabajo era mayormente artesanal, donde con
+							empeño, dedicación y muchas horas de trabajo se produjeron los
+							alfajores Capitán del Espacio por 10 años. El 23 de Diciembre de
+							1972 la fábrica se mudó a su ubicación actual en la calle Gran
+							Canaria en la localidad de Quilmes.
+						</p>
+						<p>
+							Luego de unos años, Ángel Líneo De Pascalis quedó al frente de la
+							empresa. A pesar de la evolución tecnológica, su esfuerzo siempre
+							fue respetar el gusto de los consumidores sin modificar la
+							calidad. Hoy, continuamos su obra y sueño.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-brand-blue text-white py-4">
+			<div class="container">
+				<div class="row gy-4 text-center text-md-start">
+					<div class="col-md-4">
+						<h5
+							class="mb-3"
+							style="font-family: &quot;Comfortaa&quot;, sans-serif"
+						>
+							Contacto
+						</h5>
+						<p class="mb-1">
+							<i class="bi bi-clock me-2"></i>Lun a Vie 8 a 17 hs | Sab 8 a 12
+							hs
+						</p>
+						<p class="mb-1">
+							<i class="bi bi-telephone me-2"></i>(011) 4253-5224
+						</p>
+						<p class="mb-1">
+							<i class="bi bi-envelope me-2"></i
+							>info@capitandelespacionmr.com.ar
+						</p>
+					</div>
+					<div class="col-md-4">
+						<h5
+							class="mb-3"
+							style="font-family: &quot;Comfortaa&quot;, sans-serif"
+						>
+							Ubicación
+						</h5>
+						<p>
+							Gran Canaria 350 - Quilmes<br />Provincia de Buenos Aires<br />Industria
+							Argentina
+						</p>
+					</div>
+					<div
+						class="col-md-4 text-center d-flex align-items-center justify-content-center"
+					>
+						<small
+							>© 2025 Capitán del Espacio S.A.<br />Todos los derechos
+							reservados.</small
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script src="assets/main.js"></script>
+	</body>
+</html>
